@@ -1,0 +1,239 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Section</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+  <body
+    class="bg-gradient-to-br from-yellow-50 to-red-100 font-[Poppins] h-[100vh]"
+  >
+    <nav class="bg-white/90 backdrop-blur-md shadow-md fixed w-full z-50 top-0">
+      <div
+        class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16"
+      >
+        <div class="flex items-center">
+          <img
+            src="./Images/logo.jpg"
+            alt="Logo"
+            class="h-12 w-12 rounded-full border-2 border-red-500 shadow-sm object-cover"
+          />
+          <span class="ml-3 text-2xl font-bold text-red-700">Pizzeria</span>
+        </div>
+
+        <ul class="hidden md:flex space-x-8 font-medium text-gray-700">
+          <li
+            onclick="window.location.href='index.html'"
+            class="flex items-center space-x-2 hover:text-red-600 cursor-pointer"
+          >
+            <i class="fas fa-home"></i><span>Home</span>
+          </li>
+          <li
+            onclick="window.location.href='menu.html'"
+            class="flex items-center space-x-2 hover:text-red-600 cursor-pointer"
+          >
+            <i class="fas fa-utensils"></i><span>Menu</span>
+          </li>
+          <li
+            onclick="window.location.href='cart.html'"
+            class="flex items-center space-x-2 hover:text-red-600 cursor-pointer"
+          >
+            <i class="fas fa-shopping-cart"></i><span>Cart</span>
+          </li>
+          <li
+            onclick="window.location.href='location.html'"
+            class="flex items-center space-x-2 hover:text-red-600 cursor-pointer"
+          >
+            <i class="fas fa-map-marker-alt"></i><span>Location</span>
+          </li>
+          <li
+            onclick="window.location.href='profile.html'"
+            class="flex items-center space-x-2 hover:text-red-600 cursor-pointer"
+          >
+            <i class="fas fa-user"></i><span>Profile</span>
+          </li>
+          <li>
+            <a
+              href="signup.html"
+              class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition"
+              >Sign In</a
+            >
+          </li>
+          <li onclick="logoutUser(event)">
+            <a
+              href="#"
+              class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition"
+              >Logout</a
+            >
+          </li>
+        </ul>
+
+        <button
+          id="menu-btn"
+          class="md:hidden text-gray-700 focus:outline-none"
+        >
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white/95 backdrop-blur-md shadow-lg rounded-b-2xl px-6 pb-6 transition-all duration-500 ease-in-out transform scale-95 opacity-0"
+      >
+        <ul class="space-y-4 font-medium text-gray-700">
+          <li
+            onclick="window.location.href='index.html'"
+            class="flex items-center space-x-3 hover:text-red-600 cursor-pointer transition transform hover:translate-x-1"
+          >
+            <i class="fas fa-home"></i><span>Home</span>
+          </li>
+          <li
+            onclick="window.location.href='menu.html'"
+            class="flex items-center space-x-3 hover:text-red-600 cursor-pointer transition transform hover:translate-x-1"
+          >
+            <i class="fas fa-utensils"></i><span>Menu</span>
+          </li>
+          <li
+            onclick="window.location.href='cart.html'"
+            class="flex items-center space-x-3 hover:text-red-600 cursor-pointer transition transform hover:translate-x-1"
+          >
+            <i class="fas fa-shopping-cart"></i><span>Cart</span>
+          </li>
+          <li
+            onclick="window.location.href='location.html'"
+            class="flex items-center space-x-3 hover:text-red-600 cursor-pointer transition transform hover:translate-x-1"
+          >
+            <i class="fas fa-map-marker-alt"></i><span>Location</span>
+          </li>
+          <li
+            onclick="window.location.href='profile.html'"
+            class="flex items-center space-x-3 hover:text-red-600 cursor-pointer transition transform hover:translate-x-1"
+          >
+            <i class="fas fa-user"></i><span>Profile</span>
+          </li>
+
+          <li>
+            <a
+              href="signup.html"
+              class="block text-center bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md transition transform hover:scale-105"
+            >
+              Sign In
+            </a>
+          </li>
+          <li onclick="logoutUser(event)">
+            <a
+              href="#"
+              class="block text-center bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg shadow-md transition transform hover:scale-105"
+            >
+              Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="max-w-3xl mx-auto mt-32 px-4 font-[Poppins]">
+      <div
+        class="backdrop-blur-lg bg-white/40 dark:bg-gray-900/40 rounded-2xl shadow-2xl border border-white/30 overflow-hidden"
+      >
+        <div class="p-8 bg-gradient-to-r from-red-500 via-red-600 to-red-700">
+          <h2 class="text-3xl font-bold text-white text-center">My Profile</h2>
+          <p class="text-white/80 text-center mt-2 text-sm">
+            Manage your personal details
+          </p>
+        </div>
+
+        <form id="profileForm" class="p-8 space-y-6">
+          <div>
+            <label
+              class="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              id="fullName"
+              class="w-full bg-white/70 dark:bg-gray-800/70 border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-3 text-gray-800 dark:text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 transition"
+              placeholder="Enter your name"
+              readonly
+            />
+          </div>
+
+          <div>
+            <label
+              class="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="w-full bg-white/70 dark:bg-gray-800/70 border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-3 text-gray-800 dark:text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 transition"
+              placeholder="Enter your email"
+              readonly
+            />
+          </div>
+
+          <div>
+            <label
+              class="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              class="w-full bg-white/70 dark:bg-gray-800/70 border border-gray-300 dark:border-gray-700 rounded-xl px-4 py-3 text-gray-800 dark:text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 transition"
+              placeholder="********"
+              readonly
+            />
+          </div>
+
+          <div class="pt-6 flex justify-center">
+            <button
+              type="button"
+              id="updateBtn"
+              onclick="updateProfile(event)"
+              class="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-3 rounded-xl shadow-lg transition-transform transform hover:scale-105 active:scale-95"
+            >
+              Update Profile
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script src="app.js" defer></script>
+  </body>
+</html> -->
