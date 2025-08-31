@@ -1,11 +1,11 @@
-// const menuBtn = document.getElementById("menu-btn");
-// const mobileMenu = document.getElementById("mobile-menu");
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
 
-// menuBtn?.addEventListener("click", () => {
-//   mobileMenu.classList.toggle("hidden");
-//   mobileMenu.classList.toggle("scale-95");
-//   mobileMenu.classList.toggle("opacity-0");
-// });
+menuBtn?.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+  mobileMenu.classList.toggle("scale-95");
+  mobileMenu.classList.toggle("opacity-0");
+});
 
 // function logoutUser() {
   
@@ -70,7 +70,7 @@
 //   event.preventDefault();
 //   const email = document.getElementById("loginEmail").value.trim();
 //   const password = document.getElementById("loginPassword").value.trim();
-//   const users = JSON.parse(localStorage.getItem("data")) || [];
+//   const users = JSON.parse(l a")) || [];
 
 //   const foundUser = users.find(
 //     (u) =>

@@ -15,8 +15,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
   </head>
   <body
     onload="showCart()"
@@ -120,7 +123,7 @@
           >
             <i class="fas fa-map-marker-alt"></i><span>Location</span>
           </li>
-          <li
+          <!-- <li
             onclick="window.location.href='profile.html'"
             class="flex items-center space-x-3 hover:text-red-600 cursor-pointer transition transform hover:translate-x-1"
           >
@@ -142,7 +145,7 @@
             >
               Logout
             </a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </nav>
@@ -248,47 +251,73 @@
         ></div>
       </div>
     </form>
-  <footer class="bg-gradient-to-br from-yellow-50 to-red-100 font-[Poppins]  text-black"> 
-    
-      <div class="max-w-6xl mx-auto grid gap-8 md:grid-cols-3 px-6">
+
+    <footer class="bg-gray-900 text-gray-300 font-[Poppins] w-full mt-10">
+      <div
+        class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center sm:text-left"
+      >
         <div>
-          <h3 class="text-xl font-bold mb-4 ">Shazz Pizzeria</h3>
-          <p class="ttext-black">
-            Serving happiness one slice at a time since 2020.
+          <h3 class="text-xl font-bold mb-4 text-white">Shazz Pizzeria</h3>
+          <p class="text-gray-400">
+            “Crafting joy, one perfect slice since 2025.”
           </p>
         </div>
 
-        <div  >
-          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-          <ul class="space-y-2  text-black"> 
-            <li><a href="#menu" >Menu</a></li>
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-white">Quick Links</h3>
+          <ul class="space-y-2">
             <li>
-              <a href="#offers" >Special Offers</a>
+              <a href="menu.html" class="hover:text-yellow-400 transition"
+                >Menu</a
+              >
             </li>
-            <li><a href="#contact" >Contact</a></li>
+            <li>
+              <a href="offers.html" class="hover:text-yellow-400 transition"
+                >Special Offers</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-yellow-400 transition"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
 
-       <div class="text-center">
-  <h3 class="text-xl font-bold mb-4">Follow Us</h3>
-  <div class="flex justify-center space-x-6 text-2xl ">
-    <a href="https://www.facebook.com/profile.php?id=61577740163286" target="_blank" class="text-gray-400 hover:text-blue-500 transition">
-      <i class="fab fa-facebook"></i>
-    </a>
-    <a href="https://www.instagram.com/shazzpizzeria" target="_blank" class="text-gray-400 hover:text-pink-500 transition">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://wa.me/923107225999" target="_blank" class="text-gray-400 hover:text-green-500 transition">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-    <a href="https://www.tiktok.com/@shazz.pizzeria3?" target="_blank" class="text-gray-400 hover:text-black transition">
-      <i class="fab fa-tiktok"></i>
-    </a>
-  </div>
-</div>
-
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-white">Follow Us</h3>
+          <div class="flex justify-center sm:justify-start space-x-6 text-2xl">
+            <a
+              href="https://www.facebook.com/profile.php?id=61577740163286"
+              target="_blank"
+              class="text-gray-400 hover:text-blue-500 transition"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/shazzpizzeria"
+              target="_blank"
+              class="text-gray-400 hover:text-pink-500 transition"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://wa.me/923107225999"
+              target="_blank"
+              class="text-gray-400 hover:text-green-500 transition"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a
+              href="https://www.tiktok.com/@shazz.pizzeria3?"
+              target="_blank"
+              class="text-gray-400 hover:text-white transition"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+          </div>
+        </div>
       </div>
-      <div class="text-center text-black mt-8 text-sm">
+
+      <div
+        class="w-full text-center text-gray-500 py-4 border-t border-gray-700 text-sm"
+      >
         © 2025 Shazz Pizzeria. All Rights Reserved.
       </div>
     </footer>
